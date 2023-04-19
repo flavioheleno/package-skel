@@ -1,0 +1,42 @@
+{
+  "name": "flavioheleno/package-skel",
+  "description": "Skeleton Repository for PHP Packages",
+  "keywords": [],
+  "type": "library",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "Flavio Heleno",
+      "email": "flaviohbatista@gmail.com",
+      "homepage": "https://flavioheleno.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Package\\Test\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "sandersander/composer-link": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "php-parallel-lint/php-parallel-lint": "^1.3",
+    "phpstan/phpstan": "^1.10",
+    "sandersander/composer-link": "^0.3.1"
+  }
+}
